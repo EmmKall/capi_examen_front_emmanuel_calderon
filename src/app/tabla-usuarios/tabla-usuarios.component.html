@@ -3,7 +3,7 @@
   <div class="w-full">
     <table class="table-auto w-full">
       <thead>
-        <tr>
+        <tr class="bg-blue-600 text-white">
           <th>Nombre usuario</th>
           <th>Fecha Nacimiento</th>
           <th>Edad</th>
@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor=" let user of data ">
+        <tr *ngFor=" let user of data " class="border-b-2 border-blue-400">
           <td>{{ user.name }}</td>
           <td>{{ user.fecha_nacimiento }}</td>
           <td>{{ user.edad }}</td>
